@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="banner_indicatorId" type="id" />
+    <!--Glide 在listview中imageview导致出错的解决-->
+    <item type="id" name="glide_tag" />
+
+    <!--图片查看（有放大效果）-->
+    <item name="image_orientation" type="id"/>
+    <item name="state_origin" type="id"/>
+    <item name="state_default" type="id"/>
+    <item name="state_current" type="id"/>
+    <item name="state_thumb" type="id"/>
+    <item name="state_temp" type="id"/>
+    <item name="state_touch_down" type="id"/>
+    <item name="state_touch_drag" type="id"/>
+    <item name="state_touch_scale_rotate" type="id"/>
+    <item name="view_image_watcher" type="id" />
+</resources>

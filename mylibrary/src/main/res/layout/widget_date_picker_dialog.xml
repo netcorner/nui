@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/commendDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:textSize="18dp"
+            android:text="请选择日期"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/currentDate"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="2017年05月09日"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:layout_marginTop="8dp"
+            android:background="#eeeeee"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+
+        <DatePicker
+            android:spinnersShown="true"
+            android:datePickerMode="spinner"
+            android:id="@+id/datePickerStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false" />
+    </LinearLayout>
+    <Button
+        android:textSize="15dp"
+        android:id="@+id/submitBtn"
+        android:layout_marginLeft="30dp"
+        style="?buttonStyle"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="选择" />
+
+
+</LinearLayout>

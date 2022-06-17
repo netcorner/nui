@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'android-apt'
+
+android {
+    compileSdk 31
+    //buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    //下拉刷新
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    //动画
+    implementation 'com.nineoldandroids:library:2.4.0'
+    //加载图片
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+    //json处理
+    implementation 'com.google.code.gson:gson:2.8.6'
+    //动画
+    implementation 'com.airbnb.android:lottie:3.0.7'
+    // 轻松化解了处理日期和时间的痛苦和繁琐
+    implementation 'net.danlew:android.joda:2.9.4.2'
+    //二维码生成
+    implementation 'com.google.zxing:core:3.3.0'
+    //扩展弹出对话框
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+
+    implementation 'in.srain.cube:grid-view-with-header-footer:1.0.12'
+    //compile 'com.squareup.okhttp3:okhttp:3.4.1'
+}

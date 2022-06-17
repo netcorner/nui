@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--<com.ingwill.widget.materialishprogress.ProgressWheel-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/icon_loading"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="64dp"-->
+        <!--app:matProg_barColor="?colorPrimaryDark"-->
+        <!--app:matProg_progressIndeterminate="true"-->
+        <!--app:matProg_barWidth="3dp" />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:id="@+id/icon_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        app:lottie_fileName="loadmore.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="@string/load_more_endless"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/endLayout"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#eee"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:text="End"
+            android:textColor="#aaaaaa"
+            android:textSize="14sp"
+            android:gravity="center"/>
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#eee"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+</LinearLayout>
