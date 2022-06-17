@@ -39,7 +39,7 @@
             android:layout_gravity="center"
             android:layout_width="21dp"
             android:layout_height="21dp"
-            android:src="@mipmap/ic_back_gray"
+            android:src="@drawable/ic_back_gray"
             />
         </LinearLayout>
 
